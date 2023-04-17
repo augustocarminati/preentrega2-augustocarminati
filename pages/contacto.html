@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <header class="navbar navbar-expand-xl bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img class="w-50" src="../img/logo.png" alt=""></a>
+          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <nav class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/quienes-somos.html">Quienes somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/equipamiento.html">Equipos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/indicaciones.html">Indicaciones</a>  
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./pages/contacto.html">Contacto</a>  
+              </li>            
+            </ul>
+          </nav>
+        </div>
+
+      </header>
+
+
+    <main>
+        <section>
+            <img src="../img/respuesta-al-cliente.jpg" alt="">
+            <h2>CONSULTAS, SUGERENCIAS Y RECLAMOS</h2>
+        </section>
+
+        <section>
+            <h2>Vias de comunicación</h2>
+            <ul>
+                <li>WhatsApp</li>
+                <li>Teléfono</li>
+                <li>E-mail</li>
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Dirección</li>
+                <figure>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.7599967864307!2d-65.31931038451505!3d-43.256451579136844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbe0144c0653627e3%3A0x4281e418b147c620!2sCentro%20Bioqu%C3%ADmico%20de%20Dibac%20SRL!5e0!3m2!1ses!2sar!4v1678894743549!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </figure>
+            </ul>
+        </section>
+
+        <section>
+            <h2>FORMULARIO DE CONTACTO</h2>
+
+            <form action="">
+                
+                <div>
+                    <label for="nombre">Nombre y Apellido</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+
+                <div>
+                    <span>Género</span>
+                    <label for="hombre">Hombre</label>
+                    <input type="radio" name="genero" id="hombre" value="hombre">
+                    <label for="mujer">Mujer</label>
+                    <input type="radio" name="genero" id="mujer" value="mujer">
+                </div>
+
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div>
+                <label for="asunto">Asunto del mensaje</label>
+                <select name="asunto" id="asunto">
+                    <option value="mensaje">Mensaje</option>
+                    <option value="consultas">Consultas</option>
+                    <option value="reclamos">Reclamos</option>
+                    <option value="otros">Otros</option>
+                </select>
+                </div>
+
+                <div>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="50" rows="10"></textarea>
+                </div>
+
+                <div>
+                    <input type="submit" value="enviar">
+                    <input type="reset" value="reset">
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer id="footer-index" class="footer">
+        <hr>
+        <h3 class="titulo-secundario">Sistema de Gestión de Calidad de Laboratorio Central Trelew Certificado</h3>
+        <div class="logo-certificacion">
+            <img src="../img/logo-certificacion-iso.png" width="80" height="80" alt="">
+            <img src="../img/logo-alac.png" width="80" height="80" alt="">
+            <img src="../img/responsable-registrado.PNG" width="80" height="80" alt="">
+            <img src="../img/habilitado.PNG" width="80" height="80" alt="">
+            <img src="../img/logo-certificacion.PNG" width="80" height="80" alt="">
+            <img src="../img/logo-iso.PNG" width="80" height="80" alt="">
+        </div>
+        <div class="logo-contacto">
+            <img src="../img/facebook.png" width="25" height="25" alt="">
+            <img src="../img/instagram.png" width="25" height="25" alt="">
+            <img src="../img/whatsapp.png" width="25" height="25" alt="">
+            <img src="../img/llamada-telefonica.png" width="25" height="25" alt="">
+            <img src="../img/marcador.png" width="25" height="25" alt="">
+        </div> 
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous">
+    </script> 
+    
+</body>
+</html>
+
