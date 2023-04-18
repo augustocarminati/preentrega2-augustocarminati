@@ -89,7 +89,7 @@ section h2 {color: green;
 .video-tutorial {
     height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     padding-bottom: 2em;
     }
 
@@ -269,7 +269,6 @@ form {
     text-align: center;
     padding-top: 40px;
     font-size: 1rem;
-       
 }
 
 .contenedor-historia {
@@ -279,7 +278,7 @@ form {
     padding-bottom: 50px;
     padding-top: 10px;
     } 
- 
+
 .contenedor-img-historia {
     width: 100%;
     height: 40vh;
@@ -393,4 +392,127 @@ form {
     padding-bottom: 50px;
 }
 
+}
+
+
+/* ====================================== SECCION - NUESTROS EQUIPOS =============================================== */
+
+.video-tutorial {
+    width: 70%;
+    height: 60vh;
+}
+
+.video-portada {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    
+}
+
+.contenedor-equipamiento {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 30px 0;
+}
+
+.contenedor-equipos {
+    display: flex;
+    align-items: center;
+}
+
+.tarjeta-equipos {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.foto-equipos {
+    width: 100%;
+    height: 200px;
+}
+
+.contenedor-titulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.titulo-seccion {
+    font-size: 1.5rem;
+}
+
+
+
+/* ====================================== SECCION - INDICACIONES =============================================== */
+
+
+.foto-portada {
+    width: 100%;
+    height: 50vw;
+    background-image: url(../img/lab-b.jpg);
+    background-size:cover
+}
+
+.subtitulo-seccion {
+    color: green;
+    font-size: 1rem;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.contenedor-analisis {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.descripcion-analisis {
+    padding: 15px 0;
+
+}
+
+
+/* ====================================== SECCION - CONTACTO =============================================== */
+
+.portada-contacto {
+    width: 100%;
+    height: 50vw;
+    background-image: url(../img/respuesta-al-cliente.jpg);
+    background-size:cover
+}
+
+.subtitulo-contacto {
+    color: green;
+    font-size: 1.8rem;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.subtitulo-comunicacion {
+    color: green;
+    font-size: 1.2rem;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+
+.png-contacto {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    gap: 10px;
+}
+
+.contenedor-contacto {
+    display: flex;
+}
+
+.contenedor-lista {
+    display: flex;
+  
 }
