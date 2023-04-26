@@ -1,0 +1,94 @@
+.portada {
+    font-size: 1rem;
+}
+
+.portada-texto {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 1em;
+}
+
+.imagen img {
+    width: 100%
+    }
+
+.articulo {
+    padding: 30px;
+    }
+
+h1 {
+    color: green;
+    background-color:none;
+}
+
+section h2 {color: green;
+    font-weight: bold;
+}
+
+.titulo-secundario {
+    color: gray;
+    font-size: 1rem;
+    text-align: center;
+    padding: .5em;
+}
+
+.parrafo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-style: italic;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    line-height: 25px;
+    padding: 1.5em;
+}
+
+.video-tutorial {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-bottom: .2em;
+}
+
+.tutorial {
+    width: 90%;
+    height: 70%;
+    }
+
+iframe {
+    height: 100%;
+    width: 100%;
+}
+
+.portada-estructura {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media (min-width: 600px) {
+
+    .video-tutorial{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 10vh;
+    }
+    .tutorial {
+        width: 100%;
+        height: 10wh;
+    }
+    }
+    
+    @media (min-width:1000px) {
+    
+    .tutorial {
+        width: 60%;
+        height: 450px;
+        }
+    }

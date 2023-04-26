@@ -1,0 +1,75 @@
+.footer {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(128, 128, 128, 0.192);
+    }
+
+.titulo-secundario{
+    display:flex;
+    justify-content: center;
+    }
+
+.logo-certificacion {
+    margin-top: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    align-content: center;
+    color: grey;
+    row-gap: 20px;
+    }
+
+.logo-contacto {
+    margin-top: 20px;
+    display: flex;
+    font-size: 1rem;
+    padding: 0.5em;
+    gap: 10px;
+}
+
+form {
+    color: green;
+    font-size: 18px;
+}
+
+.imagen-footer {
+    background-color: grey;
+}
+
+@media (min-width: 600px) {
+
+.footer {
+    display: grid;
+    grid-template-rows: 4;
+}
+
+.titulo-secundario {
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-certificacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    }
+
+.logo-contacto {
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.inicio a {
+    align-items: center;
+    justify-content: center;
+}
+
+}

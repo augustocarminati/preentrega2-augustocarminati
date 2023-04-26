@@ -1,0 +1,569 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+/* ----- HEADER-MOBILE HASTA 600px------ */
+
+.nav-link {
+    color: green;
+    
+}
+
+.container {
+    max-width: 100%;
+}
+
+.navbar-nav .nav-link.active {
+    color: green;
+    font-weight: bold;
+
+}
+
+
+/* ============ INDEX - MOBILE ================== */
+
+
+.portada {
+    font-size: 1rem;
+}
+
+.portada-texto {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 1em;
+}
+
+.imagen img {
+    width: 100%
+    }
+
+.articulo {
+    padding: 30px;
+    }
+
+h1 {
+    color: green;
+    background-color:none;
+}
+
+section h2 {color: green;
+    font-weight: bold;
+}
+
+.titulo-secundario {
+    color: gray;
+    font-size: 1rem;
+    text-align: center;
+    padding: .5em;
+}
+
+.parrafo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-style: italic;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    line-height: 25px;
+    padding: 1.5em;
+}
+
+.video-tutorial {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-bottom: .2em;
+}
+
+.tutorial {
+    width: 90%;
+    height: 70%;
+    }
+
+iframe {
+    height: 100%;
+    width: 100%;
+}
+
+.portada-estructura {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* ============ INDEX - DESCKTOP ================== */
+
+@media (min-width: 600px) {
+
+.video-tutorial{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+}
+.tutorial {
+    width: 100%;
+    height: 10wh;
+}
+}
+
+@media (min-width:1000px) {
+
+.tutorial {
+    width: 60%;
+    height: 450px;
+    }
+}
+
+/* ===================================== FOOTER ====================================== */
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(128, 128, 128, 0.192);
+    }
+
+.titulo-secundario{
+    display:flex;
+    justify-content: center;
+    }
+
+.logo-certificacion {
+    margin-top: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    align-content: center;
+    color: grey;
+    row-gap: 20px;
+    }
+
+.logo-contacto {
+    margin-top: 20px;
+    display: flex;
+    font-size: 1rem;
+    padding: 0.5em;
+    gap: 10px;
+}
+
+form {
+    color: green;
+    font-size: 18px;
+}
+
+.imagen-footer {
+    background-color: grey;
+}
+
+@media (min-width: 600px) {
+
+.footer {
+    display: grid;
+    grid-template-rows: 4;
+}
+
+.titulo-secundario {
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-certificacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    }
+
+.logo-contacto {
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.inicio a {
+    align-items: center;
+    justify-content: center;
+}
+
+}
+
+/* ====================================== SECCION - QUIENES SOMOS =============================================== */
+
+@media (max-width: 1023px) {
+
+.img-portada {
+    width: 100%;
+    height: 70vw;
+    background-image: url(../img/lab-a.jpg);
+    background-size:cover;
+    }
+    
+.tarjeta-directores {
+    color: black;
+    font-weight: bold;
+    font-size: .8rem;
+    }
+    
+.titulo-directores{
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px
+    }
+    
+.tarjeta {
+    width: 100%;
+    font-size: .7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+.foto-directores {
+    width: 100%;
+    height: 60%;
+    }
+    
+.contenedor-directores {
+    display: flex;
+    justify-content: space-around;
+    }
+    
+.tarjeta-staff {
+    width: 100%;
+    font-size: .7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+.contenedor-padre-staff {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+}
+
+.contenedor-tarjetas {
+    padding: 15px 0;
+}
+
+
+.titulo-seccion {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 1rem;
+}
+
+.contenedor-historia {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    } 
+
+.contenedor-img-historia {
+    width: 100%;
+    height: 40vh;
+    background-image: url(../img/lab-b.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+        
+    
+.contenedor-texto {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    }
+
+    .parrafo {
+        font-size: .8rem;
+    }
+
+
+}
+
+/* --------------- version desktop - desde 1024px ---------------- */
+
+@media (min-width: 1024px) {
+
+.img-portada {
+    width: 100%;
+    height: 70vw;
+    background-image: url(../img/lab-a.jpg);
+    background-size:cover;
+    }
+
+.tarjeta-directores {
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    }
+
+.titulo-directores{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px
+}
+
+.tarjeta {
+    width: 175px;
+    height: 200px;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto-directores {
+    width: 75%;
+    height: 60%;
+}
+
+.contenedor-directores {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.tarjeta-staff {
+    width: 150px;
+    height: 200px;
+    font-size: .8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-staff {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+
+}
+
+.titulo-seccion {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.contenedor-texto {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.contenedor-img-historia {
+    width: 100%;
+    height: 40vh;
+    background-image: url(../img/lab-b.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+
+.contenedor-historia {
+    display: flex;
+    justify-content:space-around;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+}
+
+
+/* ====================================== SECCION - NUESTROS EQUIPOS =============================================== */
+
+.video-tutorial {
+    width: 70%;
+    height: 60vh;
+}
+
+.video-portada {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    
+}
+
+.contenedor-equipamiento {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 30px 0;
+}
+
+.contenedor-equipos {
+    display: flex;
+    align-items: center;
+}
+
+.tarjeta-equipos {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.foto-equipos {
+    width: 100%;
+    height: 200px;
+}
+
+.contenedor-titulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.titulo-seccion {
+    font-size: 1.5rem;
+}
+
+
+
+/* ====================================== SECCION - INDICACIONES =============================================== */
+
+
+.foto-portada {
+    width: 100%;
+    height: 50vw;
+    background-image: url(../img/lab-b.jpg);
+    background-size:cover
+}
+
+.subtitulo-seccion {
+    color: green;
+    font-size: 1rem;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.contenedor-analisis {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.descripcion-analisis {
+    padding: 15px 0;
+
+}
+
+
+/* ====================================== SECCION - CONTACTO =============================================== */
+
+.portada-contacto {
+    width: 100%;
+    height: 50vw;
+    background-image: url(../img/respuesta-al-cliente.jpg);
+    background-size:contain
+}
+
+.subtitulo-contacto {
+    color: green;
+    font-size: 1.8rem;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.subtitulo-comunicacion {
+    color: green;
+    font-size: 1.6rem;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+
+.png-contacto {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    gap: 10px;
+}
+
+.contenedor-contacto {
+    display: flex;
+    padding-left: 20px;
+}
+
+.contenedor-lista {
+    display: flex;
+  
+}
+
+.lista-redes {
+    font-size: 1.4rem;
+}
+
+
+.contacto {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.contenedor-contact {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 20px;
+}
+
+.formulario, .contenedor-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.boton-enviar {
+    padding: 10px 20px;
+    background-color: green;
+    border-radius: 30px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+}
+
+.boton-enviar:hover {
+    background-color: rgba(0, 128, 0, 0.514);
+    color: white;
+
+}
