@@ -14,17 +14,15 @@ body ul ol {
   list-style: none;
 }
 
-.nav-link {
-  color: green;
-}
-
 .container {
   max-width: 100%;
 }
-
-.navbar-nav .nav-link.active {
+.container .navbar-nav .nav-link.active {
   color: green;
   font-weight: bold;
+}
+.container .nav-link {
+  color: green;
 }
 
 .footer {
@@ -39,6 +37,10 @@ body ul ol {
 .titulo-secundario {
   display: flex;
   justify-content: center;
+  color: gray;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.5em;
 }
 
 .logo-certificacion {
@@ -106,57 +108,56 @@ form {
 .subtitulo-contacto {
   color: green;
   font-size: 1.8rem;
-  padding-top: 20px;
+  padding-top: 1em;
   text-align: center;
 }
 
-.subtitulo-comunicacion {
+.comunicacion {
+  display: flex;
+  justify-content: space-around;
+}
+.comunicacion .contenedor-contacto {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+}
+.comunicacion .contenedor-contacto-secundario {
+  display: flex;
+}
+.comunicacion .contenedor-contacto .subtitulo-comunicacion {
   color: green;
-  font-size: 1.6rem;
-  padding-top: 40px;
+  font-size: 1.8rem;
+  padding-top: 1em;
   padding-left: 10px;
   padding-bottom: 10px;
 }
-
-.png-contacto {
+.comunicacion .contenedor-contacto .png-contacto {
   display: flex;
   flex-direction: column;
   font-size: 1rem;
   gap: 10px;
 }
-
-.contenedor-contacto {
-  display: flex;
-  padding-left: 20px;
-}
-
-.contenedor-lista {
-  display: flex;
-}
-
-.lista-redes {
+.comunicacion .contenedor-contacto .png-contacto .lista-redes {
   font-size: 1.4rem;
-}
-
-.contacto {
-  display: flex;
-  justify-content: left;
-  align-items: center;
+  list-style-type: none;
 }
 
 .contenedor-contact {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
   flex-direction: column;
+  align-items: center;
+  order: -1;
   width: 50%;
   padding-left: 20px;
 }
 
-.formulario, .contenedor-formulario {
+.contenedor-formulario {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   padding: 15px;
 }
@@ -170,21 +171,27 @@ form {
   cursor: pointer;
   align-self: center;
 }
-
 .boton-enviar:hover {
   background-color: rgba(0, 128, 0, 0.514);
-  color: white;
-}
-
-.video-tutorial {
-  width: 70%;
-  height: 60vh;
+  color: greenyellow;
 }
 
 .video-portada {
+  width: 100%;
+  height: 500px;
+  padding-top: 1em;
+}
+
+.video-youtube {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
-  padding-top: 20px;
+}
+
+.video-youtube iframe {
+  width: 60%;
+  height: 100%;
 }
 
 .contenedor-equipamiento {
@@ -225,8 +232,7 @@ form {
 .portada {
   font-size: 1rem;
 }
-
-.portada-texto {
+.portada .portada-texto {
   height: auto;
   display: flex;
   flex-direction: column;
@@ -234,33 +240,20 @@ form {
   font-size: 1.2rem;
   padding: 1em;
 }
-
-.imagen img {
+.portada .imagen img {
   width: 100%;
 }
-
-.articulo {
-  padding: 30px;
-}
-
-h1 {
+.portada h1 {
   color: green;
   background-color: none;
 }
 
-section h2 {
-  color: green;
-  font-weight: bold;
+.portada-estructura {
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
-
-.titulo-secundario {
-  color: gray;
-  font-size: 1rem;
-  text-align: center;
-  padding: 0.5em;
-}
-
-.parrafo {
+.portada-estructura .parrafo {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1rem;
   font-style: italic;
@@ -272,27 +265,26 @@ section h2 {
   padding: 1.5em;
 }
 
+section h2 {
+  color: green;
+  font-weight: bold;
+}
+
 .video-tutorial {
-  width: 100vw;
+  width: 100%;
+  height: 400px;
   display: flex;
   justify-content: center;
   padding-bottom: 0.2em;
+  align-items: center;
 }
-
-.tutorial {
-  width: 90%;
-  height: 70%;
+.video-tutorial .tutorial {
+  width: 50%;
+  height: 100%;
 }
-
-iframe {
+.video-tutorial .tutorial iframe {
   height: 100%;
   width: 100%;
-}
-
-.portada-estructura {
-  height: auto;
-  display: flex;
-  flex-direction: column;
 }
 
 @media (min-width: 600px) {
@@ -300,17 +292,14 @@ iframe {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 10vh;
   }
   .tutorial {
     width: 100%;
-    height: 10wh;
   }
 }
 @media (min-width: 1000px) {
   .tutorial {
     width: 60%;
-    height: 450px;
   }
 }
 .foto-portada {

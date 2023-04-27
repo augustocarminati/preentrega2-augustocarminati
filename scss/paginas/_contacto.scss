@@ -3,81 +3,85 @@
     height: 50vw;
     background-image: url(../img/respuesta-al-cliente.jpg);
     background-size:contain
+
 }
 
 .subtitulo-contacto {
     color: green;
     font-size: 1.8rem;
-    padding-top: 20px;
+    padding-top: 1em;
     text-align: center;
 }
 
-.subtitulo-comunicacion {
-    color: green;
-    font-size: 1.6rem;
-    padding-top: 40px;
-    padding-left: 10px;
-    padding-bottom: 10px;
-}
+.comunicacion {
 
-
-.png-contacto {
     display: flex;
+    justify-content: space-around;
+
+    .contenedor-contacto {
+    display: flex;
+    width: 50%;
     flex-direction: column;
-    font-size: 1rem;
-    gap: 10px;
-}
-
-.contenedor-contacto {
-    display: flex;
-    padding-left: 20px;
-}
-
-.contenedor-lista {
-    display: flex;
-  
-}
-
-.lista-redes {
-    font-size: 1.4rem;
-}
-
-
-.contacto {
-    display: flex;
-    justify-content: left;
     align-items: center;
+    padding-left: 20px;
+    
+
+    &-secundario{
+        display: flex;
+    }
+
+    .subtitulo-comunicacion {
+        color: green;
+        font-size: 1.8rem;
+        padding-top: 1em;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        }
+
+    .png-contacto {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        gap: 10px;
+
+        .lista-redes {
+            font-size: 1.4rem;
+            list-style-type: none;
+        }
+    }
+    }
+
 }
 
 .contenedor-contact {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 50%;
-    padding-left: 20px;
-}
-
-.formulario, .contenedor-formulario {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    padding: 15px;
-}
-
-.boton-enviar {
-    padding: 10px 20px;
-    background-color: green;
-    border-radius: 30px;
-    color: white;
-    border: none;
-    cursor: pointer;
-    align-self: center;
-}
-
-.boton-enviar:hover {
-    background-color: rgba(0, 128, 0, 0.514);
-    color: white;
-
-}
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        order: -1;
+        width: 50%;
+        padding-left: 20px;
+    }
+    
+    .contenedor-formulario{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .boton-enviar {
+        padding: 10px 20px;
+        background-color: green;
+        border-radius: 30px;
+        color: white;
+        border: none;
+        cursor: pointer;
+        align-self: center;
+    
+        &:hover {
+            background-color: rgba(0, 128, 0, 0.514);
+            color: greenyellow;
+        }
+    }

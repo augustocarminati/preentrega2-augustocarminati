@@ -1,14 +1,14 @@
-.nav-link {
-    color: green;
-    
-}
-
 .container {
     max-width: 100%;
+
+    .navbar-nav .nav-link.active {
+        color: green;
+        font-weight: bold;
+    }
+    
+    .nav-link {
+        color: green;
+        
+    }
 }
 
-.navbar-nav .nav-link.active {
-    color: green;
-    font-weight: bold;
-
-}
