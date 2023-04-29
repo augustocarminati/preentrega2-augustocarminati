@@ -45,14 +45,13 @@ section h2 {color: green;
 
 .video-tutorial {
     width: 100%;
-    height: 400px;
+    height: 300px;
     display: flex;
     justify-content: center;
-    padding-bottom: .2em;
     align-items: center;
 
     .tutorial {
-        width: 50%;
+        max-width: 50%;
         height: 100%;
 
         iframe {
@@ -69,18 +68,11 @@ section h2 {color: green;
         display: flex;
         justify-content: center;
         width: 100%;
-    
-    }
-    .tutorial {
+        height: 450px;
+
+        .tutorial {
         width: 100%;
-        
-    }
-    }
-    
-    @media (min-width:1000px) {
-    
-    .tutorial {
-        width: 60%;
-        
         }
+    }
 }
+    
