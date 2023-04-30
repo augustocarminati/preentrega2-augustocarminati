@@ -14,7 +14,7 @@
         }
         
     .titulo-directores{
-        font-size: 1rem;
+        font-size: 1.5rem;
         text-align: center;
         padding: 10px
         }
@@ -22,9 +22,7 @@
     .tarjeta {
         width: 100%;
         font-size: .7rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-box-column(center,center);
         }
         
     .foto-directores {
@@ -40,9 +38,7 @@
     .tarjeta-staff {
         width: 100%;
         font-size: .7rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-box-column(center,center);
         }
         
     .contenedor-padre-staff {
@@ -62,9 +58,7 @@
     }
     
     .contenedor-historia {
-        display: flex;
-        flex-direction: column;
-        justify-content:space-around;
+        @include flex-box-column(space-around,center);
         padding-bottom: 50px;
         padding-top: 10px;
         } 
@@ -85,6 +79,7 @@
         text-align: center;
         align-content: center;
         justify-content: center;
+        padding-top: 1em;
         }
     
         .parrafo {
@@ -117,9 +112,7 @@
             width: 175px;
             height: 200px;
             font-size: 1rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex-box-column(center,center);
         }
         
         .foto-directores {
@@ -128,8 +121,7 @@
         }
         
         .contenedor-directores {
-            display: flex;
-            justify-content: space-around;
+            @include flex-box(space-around,center);
             padding-top: 20px;
         }
         
@@ -137,9 +129,7 @@
             width: 150px;
             height: 200px;
             font-size: .8rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex-box-column(center,center);
         }
         
         .contenedor-staff {
@@ -152,6 +142,7 @@
         .titulo-seccion {
             text-align: center;
             padding-top: 40px;
+            font-size: 1.5rem;
         }
         
         .contenedor-texto {

@@ -2,10 +2,8 @@
     font-size: 1rem;
 
     .portada-texto {
+    @include flex-box-column(center,center);
     height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     font-size: 1.2rem;
     padding: 1em;
     }
@@ -15,7 +13,7 @@
     }
     
     h1 {
-    color: green;
+    color: $color-primario;
     background-color:none;
     }
     
@@ -27,7 +25,7 @@
     flex-direction: column;
 
     .parrafo {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: $fuente-principal;
         font-size: 1rem;
         font-style: italic;
         text-align: center;
@@ -39,16 +37,15 @@
     }
 }
 
-section h2 {color: green;
+section h2 {color: $color-primario;
     font-weight: bold;
 }
 
 .video-tutorial {
     width: 100%;
     height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-box(center,center);
+    
 
     .tutorial {
         max-width: 50%;
@@ -65,8 +62,7 @@ section h2 {color: green;
 @media (min-width: 600px) {
 
     .video-tutorial{
-        display: flex;
-        justify-content: center;
+        @include flex-box(center,center);
         width: 100%;
         height: 450px;
 

@@ -5,8 +5,28 @@
     
 }
 
+$color-primario:green;
+$color-primario-1:grey;
+$color-primario-2: white;
+
+$fuente-principal:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+$tamaño-principal: 1rem;
+
+@mixin flex-box($justify,$align){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+} 
+
+@mixin flex-box-column($justify,$align){
+    display: flex;
+    flex-direction: column;
+    justify-content: $justify;
+    align-items: $align;
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: $fuente-principal;
 
     a {
         text-decoration: none;
