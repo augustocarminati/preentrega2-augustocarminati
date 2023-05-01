@@ -424,51 +424,51 @@ section h2 {
     background-image: url(../img/lab-a.jpg);
     background-size: cover;
   }
-  .tarjeta-directores {
+  .contenedor-directores {
+    display: flex;
+    justify-content: space-around;
+  }
+  .contenedor-tarjetas {
+    padding: 15px 0;
+  }
+  .contenedor-tarjetas .foto-directores {
+    width: 100%;
+    height: 60%;
+  }
+  .contenedor-tarjetas .tarjeta {
+    width: 100%;
+    font-size: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedor-tarjetas .tarjeta-directores {
     color: black;
     font-weight: bold;
     font-size: 0.8rem;
   }
   .titulo-directores {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-align: center;
     padding: 10px;
-  }
-  .tarjeta {
-    width: 100%;
-    font-size: 0.7rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .foto-directores {
-    width: 100%;
-    height: 60%;
-  }
-  .contenedor-directores {
-    display: flex;
-    justify-content: space-around;
-  }
-  .tarjeta-staff {
-    width: 100%;
-    font-size: 0.7rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   .contenedor-padre-staff {
     display: grid;
     grid-template-columns: repeat(3, auto);
   }
-  .contenedor-tarjetas {
-    padding: 15px 0;
+  .tarjeta-staff {
+    width: 100%;
+    font-size: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .titulo-seccion {
     text-align: center;
     padding-top: 40px;
-    font-size: 1rem;
+    font-size: 1.8rem;
   }
   .contenedor-historia {
     display: flex;
@@ -478,7 +478,7 @@ section h2 {
     padding-bottom: 50px;
     padding-top: 10px;
   }
-  .contenedor-img-historia {
+  .contenedor-historia .contenedor-img-historia {
     width: 100%;
     height: 40vh;
     background-image: url(../img/lab-b.jpg);
@@ -486,7 +486,7 @@ section h2 {
     background-repeat: no-repeat;
     background-position: center;
   }
-  .contenedor-texto {
+  .contenedor-historia .contenedor-texto {
     width: 100%;
     height: auto;
     text-align: center;
@@ -494,8 +494,9 @@ section h2 {
     justify-content: center;
     padding-top: 1em;
   }
-  .parrafo {
-    font-size: 0.8rem;
+  .contenedor-historia .contenedor-texto .parrafo {
+    font-size: 1rem;
+    text-align: center;
   }
 }
 @media (min-width: 1024px) {
@@ -505,15 +506,16 @@ section h2 {
     background-image: url(../img/lab-a.jpg);
     background-size: cover;
   }
-  .tarjeta-directores {
-    color: black;
-    font-weight: bold;
-    font-size: 1rem;
-  }
   .titulo-directores {
     font-size: 1.5rem;
     text-align: center;
     padding: 20px;
+  }
+  .contenedor-directores {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
   }
   .tarjeta {
     width: 175px;
@@ -528,10 +530,14 @@ section h2 {
     width: 75%;
     height: 60%;
   }
-  .contenedor-directores {
+  .tarjeta-directores {
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .contenedor-staff {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     padding-top: 20px;
   }
   .tarjeta-staff {
@@ -542,11 +548,6 @@ section h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  .contenedor-staff {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 20px;
   }
   .titulo-seccion {
     text-align: center;
