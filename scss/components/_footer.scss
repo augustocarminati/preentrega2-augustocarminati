@@ -23,6 +23,11 @@
         align-items: center;
         color: grey;
         row-gap: 20px;
+
+        .footer-iconos-calidad{
+            width: 80px;
+            height: 80px;
+        }
         }
     
 
@@ -32,6 +37,11 @@
         font-size: 1rem;
         padding: 0.5em;
         gap: 10px;
+
+        .footer-iconos-redes {
+            width: 25px;
+            height: 25px;
+        }
     }
         
 }

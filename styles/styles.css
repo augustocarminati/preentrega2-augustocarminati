@@ -50,12 +50,20 @@ body ul ol {
   color: grey;
   row-gap: 20px;
 }
+.footer .logo-certificacion .footer-iconos-calidad {
+  width: 80px;
+  height: 80px;
+}
 .footer .logo-contacto {
   margin-top: 20px;
   display: flex;
   font-size: 1rem;
   padding: 0.5em;
   gap: 10px;
+}
+.footer .logo-contacto .footer-iconos-redes {
+  width: 25px;
+  height: 25px;
 }
 
 form {
