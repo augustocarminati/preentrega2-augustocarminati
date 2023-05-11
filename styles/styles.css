@@ -14,6 +14,20 @@ body ul ol {
   list-style: none;
 }
 
+.boton-enviar {
+  padding: 10px 20px;
+  background-color: green;
+  border-radius: 30px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  align-self: center;
+}
+.boton-enviar:hover {
+  background-color: rgba(0, 128, 0, 0.514);
+  color: greenyellow;
+}
+
 .container {
   max-width: 100%;
 }
@@ -99,6 +113,18 @@ form {
   }
 }
 @media (max-width: 600px) {
+  .portada-contacto {
+    width: 100%;
+    height: 50vw;
+    background-image: url(../img/respuesta-al-cliente.jpg);
+    background-size: contain;
+  }
+  .subtitulo-contacto {
+    color: green;
+    font-size: 1.8rem;
+    padding-top: 1em;
+    text-align: center;
+  }
   .comunicacion {
     display: flex;
     flex-direction: column;
@@ -109,85 +135,139 @@ form {
   .comunicacion .contenedor-contact {
     order: 1;
   }
+  .contenedor-contacto {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+  }
+  .contenedor-contacto-secundario {
+    display: flex;
+  }
+  .contenedor-contacto .subtitulo-comunicacion {
+    color: green;
+    font-size: 1.8rem;
+    padding-top: 1em;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .contenedor-contacto .png-contacto {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    gap: 10px;
+  }
+  .contenedor-contacto .png-contacto .lista-redes {
+    font-size: 1.4rem;
+    list-style-type: none;
+  }
+  .contenedor-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    order: -1;
+    width: 100%;
+    padding-left: 20px;
+  }
+  .formulario {
+    width: 100%;
+    align-items: center;
+    align-content: center;
+  }
+  .contenedor-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+  }
+  .contenedor-formulario input {
+    width: 100%;
+  }
+  .btn-send {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1em;
+  }
 }
-.portada-contacto {
-  width: 100%;
-  height: 50vw;
-  background-image: url(../img/respuesta-al-cliente.jpg);
-  background-size: contain;
+@media (min-width: 601px) {
+  .portada-contacto {
+    width: 100%;
+    height: 50vw;
+    background-image: url(../img/respuesta-al-cliente.jpg);
+    background-size: contain;
+  }
+  .subtitulo-contacto {
+    color: green;
+    font-size: 1.8rem;
+    padding-top: 1em;
+    text-align: center;
+  }
+  .comunicacion {
+    display: flex;
+    justify-content: space-around;
+  }
+  .comunicacion .contenedor-contacto {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+  }
+  .comunicacion .contenedor-contacto-secundario {
+    display: flex;
+  }
+  .comunicacion .contenedor-contacto .subtitulo-comunicacion {
+    color: green;
+    font-size: 1.8rem;
+    padding-top: 1em;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .comunicacion .contenedor-contacto .png-contacto {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    gap: 10px;
+  }
+  .comunicacion .contenedor-contacto .png-contacto .lista-redes {
+    font-size: 1.4rem;
+    list-style-type: none;
+  }
+  .contenedor-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    order: -1;
+    width: 50vw;
+    padding-left: 20px;
+  }
+  .formulario {
+    width: 100%;
+  }
+  .contenedor-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+  }
+  .contenedor-formulario input {
+    width: 100%;
+  }
+  .btn-send {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1em;
+  }
 }
-
-.subtitulo-contacto {
-  color: green;
-  font-size: 1.8rem;
-  padding-top: 1em;
-  text-align: center;
-}
-
-.comunicacion {
-  display: flex;
-  justify-content: space-around;
-}
-.comunicacion .contenedor-contacto {
-  display: flex;
-  width: 50%;
-  flex-direction: column;
-  align-items: center;
-  padding-left: 20px;
-}
-.comunicacion .contenedor-contacto-secundario {
-  display: flex;
-}
-.comunicacion .contenedor-contacto .subtitulo-comunicacion {
-  color: green;
-  font-size: 1.8rem;
-  padding-top: 1em;
-  padding-left: 10px;
-  padding-bottom: 10px;
-}
-.comunicacion .contenedor-contacto .png-contacto {
-  display: flex;
-  flex-direction: column;
-  font-size: 1rem;
-  gap: 10px;
-}
-.comunicacion .contenedor-contacto .png-contacto .lista-redes {
-  font-size: 1.4rem;
-  list-style-type: none;
-}
-
-.contenedor-contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  order: -1;
-  width: 50%;
-  padding-left: 20px;
-}
-
-.contenedor-formulario {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-}
-
-.boton-enviar {
-  padding: 10px 20px;
-  background-color: green;
-  border-radius: 30px;
-  color: white;
-  border: none;
-  cursor: pointer;
-  align-self: center;
-}
-.boton-enviar:hover {
-  background-color: rgba(0, 128, 0, 0.514);
-  color: greenyellow;
-}
-
 .equipos .video-portada {
   height: 250px;
   padding-top: 1em;

@@ -1,43 +1,35 @@
 @media (max-width: 600px){
+
+    .portada-contacto {
+        width: 100%;
+        height: 50vw;
+        background-image: url(../img/respuesta-al-cliente.jpg);
+        background-size:contain
+    }
+    .subtitulo-contacto {
+        color: $color-primario;
+        font-size: 1.8rem;
+        padding-top: 1em;
+        text-align: center;
+    }
+    
     .comunicacion {
         @include flex-box-column(space-around,center);
         align-content: center;
         
         .contenedor-contact {
-            order: 1;
+        order: 1;
         }
     }
-}
-
-.portada-contacto {
-    width: 100%;
-    height: 50vw;
-    background-image: url(../img/respuesta-al-cliente.jpg);
-    background-size:contain
-
-}
-
-.subtitulo-contacto {
-    color: $color-primario;
-    font-size: 1.8rem;
-    padding-top: 1em;
-    text-align: center;
-}
-
-.comunicacion {
-
-    display: flex;
-    justify-content: space-around;
-
-    .contenedor-contacto {
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 20px;
     
-
-    &-secundario{
+    .contenedor-contacto {
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 20px;
+    
+        &-secundario{
         display: flex;
     }
 
@@ -47,6 +39,7 @@
         padding-top: 1em;
         padding-left: 10px;
         padding-bottom: 10px;
+        text-align: center;
         }
 
     .png-contacto {
@@ -55,38 +48,124 @@
         font-size: 1rem;
         gap: 10px;
 
-        .lista-redes {
-            font-size: 1.4rem;
-            list-style-type: none;
+    .lista-redes {
+        font-size: 1.4rem;
+        list-style-type: none;
         }
     }
+}
+
+    .contenedor-contact {
+        @include flex-box-column(center,center);
+        order: -1;
+        width: 100%;
+        padding-left: 20px;
+        }
+        
+        .formulario{
+        width: 100%; 
+        align-items: center;
+        align-content: center;   
+        }
+    
+        .contenedor-formulario{
+        @include flex-box-column(center,center);
+        width: 100%;
+        padding: 15px;
+    
+        input{
+        width: 100%;
+        }
     }
 
+    .btn-send{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1em;
+    }
+
+    
+}
+
+@media (min-width: 601px){
+
+    .portada-contacto {
+        width: 100%;
+        height: 50vw;
+        background-image: url(../img/respuesta-al-cliente.jpg);
+        background-size:contain
+}
+
+    .subtitulo-contacto {
+        color: $color-primario;
+        font-size: 1.8rem;
+        padding-top: 1em;
+        text-align: center;
+}
+
+    .comunicacion {
+        display: flex;
+        justify-content: space-around;
+
+    .contenedor-contacto {
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 20px;
+    
+        &-secundario{
+        display: flex;
+    }
+
+    .subtitulo-comunicacion {
+        color: $color-primario;
+        font-size: 1.8rem;
+        padding-top: 1em;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        }
+
+    .png-contacto {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        gap: 10px;
+
+    .lista-redes {
+        font-size: 1.4rem;
+        list-style-type: none;
+        }
+    }
+}
 }
 
 .contenedor-contact {
     @include flex-box-column(center,center);
         order: -1;
-        width: 50%;
+        width: 50vw;
         padding-left: 20px;
     }
     
+    .formulario{
+        width: 100%;    
+    }
+
     .contenedor-formulario{
         @include flex-box-column(center,center);
+        width: 100%;
         padding: 15px;
-    }
-    
-    .boton-enviar {
-        padding: 10px 20px;
-        background-color: $color-primario;
-        border-radius: 30px;
-        color: $color-primario-2;
-        border: none;
-        cursor: pointer;
-        align-self: center;
-    
-        &:hover {
-            background-color: rgba(0, 128, 0, 0.514);
-            color: greenyellow;
+
+        input{
+            width: 100%;
         }
     }
+    
+    .btn-send{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1em;
+    }
+    
+}
